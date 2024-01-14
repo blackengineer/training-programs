@@ -11,7 +11,7 @@ const SettingsPage = () => {
   }
   
   return (
-    <div>
+    <div className='p-6'>
       <button onClick={onClick} type='submit'>
         Sign out
       </button>
