@@ -161,6 +161,7 @@ const LoginForm = () => {
           <FormError message={error || urlError}/>
           <FormSuccess message={success}/>
           <Button
+            isPending={isPending}
             disabled={isPending}
             type='submit'
             className='w-full'
