@@ -20,7 +20,7 @@ const LandingNavbar = () => {
           <Image 
             fill
             alt='logo'
-            src='dark-logo.svg'
+            src='logo.svg'
           />
         </div>
       </Link>

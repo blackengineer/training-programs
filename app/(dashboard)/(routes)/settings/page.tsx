@@ -11,7 +11,7 @@ const SettingsPage = () => {
   }
   
   return (
-    <div className='bg-white p-10 rounded-xl'>
+    <div>
       <button onClick={onClick} type='submit'>
         Sign out
       </button>
