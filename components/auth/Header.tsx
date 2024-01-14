@@ -9,7 +9,7 @@ const Header = ({
   label,
 }: HeaderProps) => {
   return (
-    <div className='w-full flex flex-col gap-y-4 items-center justify-end'>
+    <div className='w-full flex flex-col gap-y-4 items-center justify-center'>
       <Link href={'/'}>
         <Logo />
       </Link>
