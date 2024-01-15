@@ -1,6 +1,6 @@
 'use client'
 
-import { LogOut, User } from 'lucide-react'
+import { LogOut, Settings, User } from 'lucide-react'
 
 import {
   DropdownMenu,
@@ -53,6 +53,7 @@ export const UserButton = () => {
         <DropdownMenuItem asChild>
           <Link
             href='/search'
+            className='cursor-pointer'
           >
             Courses
           </Link>
@@ -60,15 +61,25 @@ export const UserButton = () => {
         <DropdownMenuItem asChild>
           <Link
             href='/dashboard'
+            className='cursor-pointer'
           >
             Dashboard
           </Link>
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
+        <DropdownMenuItem asChild>
+          <Link
+            href='/settings'
+            className='cursor-pointer'
+          >
+            <Settings className='h-4 w-4 mr-2 cursor' />
+            Settings
+          </Link>
+        </DropdownMenuItem>
         <LogoutButton>
-          <DropdownMenuItem>
-            <LogOut className='h-4 w-4 mr-2' />
+          <DropdownMenuItem className='cursor-pointer'>
+            <LogOut className='h-4 w-4 mr-2 cursor' />
             Sign out
           </DropdownMenuItem>
         </LogoutButton>

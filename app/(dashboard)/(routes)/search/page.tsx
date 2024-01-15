@@ -1,6 +1,6 @@
 const SearchPage = () => {
   return (
-    <div className='p-6'>
+    <div className='p-4'>
       Search
     </div>
   )
