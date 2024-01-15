@@ -1,4 +1,4 @@
-// import { IconBadge } from '@/components/IconBadge'
+import { IconBadge } from '@/components/IconBadge'
 import { currentUser } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { CircleDollarSign, File, LayoutDashboard, ListChecks } from 'lucide-react'
@@ -95,7 +95,7 @@ const CourseIdPage = async ({
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-16'>
           <div>
             <div className='flex items-center gap-x-2'>
-              {/* <IconBadge icon={LayoutDashboard} /> */}
+              <IconBadge icon={LayoutDashboard} />
               <h2 className='font-medium'>
                 Customize your course
               </h2>
@@ -124,7 +124,7 @@ const CourseIdPage = async ({
           <div className='space-y-6'>
             <div>
               <div className='flex items-center gap-x-2'>
-                {/* <IconBadge icon={ListChecks} /> */}
+                <IconBadge icon={ListChecks} />
                 <h2 className='font-medium'>
                   Course chapters
                 </h2>
@@ -136,7 +136,7 @@ const CourseIdPage = async ({
             </div>
             <div>
               <div className='flex items-center gap-x-2'>
-                {/* <IconBadge icon={CircleDollarSign} /> */}
+                <IconBadge icon={CircleDollarSign} />
                 <h2 className='font-medium'>
                   Sell your course
                 </h2>
@@ -148,7 +148,7 @@ const CourseIdPage = async ({
             </div>
             <div>
               <div className="flex items-center gap-x-2">
-                {/* <IconBadge icon={File} /> */}
+                <IconBadge icon={File} />
                 <h2 className="font-medium">
                   Resources & Attachments
                 </h2>
