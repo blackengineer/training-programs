@@ -4,7 +4,7 @@ import LandingHero from './_components/LandingHero'
 
 const Home = () => {
   return (
-    <main className='h-full bg-zinc-950'>
+    <main className='h-full'>
       <LandingNavbar />
       <div className='flex flex-col items-center justify-center'>
         <LandingHero />

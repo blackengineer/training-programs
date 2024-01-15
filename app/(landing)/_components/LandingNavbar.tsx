@@ -25,7 +25,7 @@ const LandingNavbar = () => {
         </div>
       </Link>
       <div className='flex items-center gap-x-2'>
-        <LoginButton>
+        <LoginButton mode='modal' asChild>
           <Button variant={'premium'}>
             Sign in
           </Button>

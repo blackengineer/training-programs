@@ -4,13 +4,13 @@ import Link from 'next/link'
 import TypewriterComponent from 'typewriter-effect'
 import { Button } from '@/components/ui/Button'
 import { Progress } from '@/components/ui/Progress'
-import LoginButton from '@/components/auth/LoginButton'
+import RegisterButton from '@/components/auth/RegisterButton'
 
 const LandingHero = () => {
   return (
     <div className='font-bold py-36 text-center space-y-5'>
       <div className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold mb-10'>
-        <h1 className='text-secondary'>
+        <h1>
           how to train for
         </h1>
         <div className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600'>
@@ -34,7 +34,7 @@ const LandingHero = () => {
           />
         </div>
       </div>
-      <div className='text-sm md:text-base font-light text-secondary'>
+      <div className='text-sm md:text-base font-light'>
         Level up your athletic performance and compete with confidence.
       </div>
       <div>
@@ -53,11 +53,11 @@ const LandingHero = () => {
       </div>
       
       <div>
-        <LoginButton>
+        <RegisterButton mode='modal' asChild>
           <Button variant='premium'>
             Explore courses
           </Button>
-        </LoginButton>
+        </RegisterButton>
       </div>
     </div>
   )
