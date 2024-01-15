@@ -19,9 +19,8 @@ import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import Link from 'next/link'
 import { redirect, useRouter } from 'next/navigation'
-// import toast from 'react-hot-toast'
-import { useSession } from 'next-auth/react'
 import toast from 'react-hot-toast'
+import { useCurrentUser } from '@/hooks/use-current-user'
 
 const formSchema = z.object({
   title: z.string().min(1, {
@@ -30,18 +29,13 @@ const formSchema = z.object({
 })
 
 const CreatePage = () => {
-  // const { data: sesssion } = useSession({
-  //   required: true,
-  //   onUnauthenticated() {
-  //     redirect('/sign-in')
-  //   },
-  // })
+  const user = useCurrentUser()
 
-  // const isAdminUser = sesssion?.user.role === 'ADMIN'
+  const isAdminUser = user?.role === 'ADMIN'
 
-  // if (!isAdminUser) {
-  //   return redirect('/dashboard')
-  // }
+  if (!isAdminUser) {
+    return redirect('/dashboard')
+  }
 
   const router = useRouter()
 

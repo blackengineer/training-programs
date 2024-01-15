@@ -1,7 +1,15 @@
 import { Button } from '@/components/ui/Button'
+import { currentUser } from '@/lib/auth'
 import Link from 'next/link'
+import { redirect } from 'next/navigation'
 
-const CoursesPage = () => {
+const CoursesPage = async () => {
+  const user = await currentUser()
+
+  if (user?.role !== 'ADMIN') {
+    return redirect('/dashboard')
+  }
+
   return (
     <div className='p-6'>
       <Link href={'/teacher/create'}>

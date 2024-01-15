@@ -16,7 +16,7 @@ const NavbarRoutes = () => {
   const isCoursePage = pathname?.includes('/courses')
   const isSearchPage = pathname === "/search"
 
-  // const isAdminUser = user?.role === 'ADMIN'
+  const isAdminUser = user?.role === 'ADMIN'
 
   return (
     <div className='flex gap-x-2 ml-auto'>
@@ -27,13 +27,13 @@ const NavbarRoutes = () => {
             Exit
           </Button>
         </Link> 
-      ): (
+      ): isAdminUser ? (
         <Link href={'teacher/courses'}>
           <Button variant={'ghost'} className='mt-0.5'>
             Teacher mode
           </Button>
         </Link>
-      )}
+      ): null }
       <UserButton />
     </div>
   )
