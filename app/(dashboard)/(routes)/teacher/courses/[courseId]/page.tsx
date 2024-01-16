@@ -6,8 +6,8 @@ import { redirect } from 'next/navigation'
 import { TitleForm } from './_components/TitleForm'
 import { DescriptionForm } from './_components/DescriptionForm'
 import { ImageForm } from './_components/ImageForm'
-// import { CategoryForm } from './_components/CategoryForm'
-// import { PriceForm } from './_components/PriceForm'
+import { CategoryForm } from './_components/CategoryForm'
+import { PriceForm } from './_components/PriceForm'
 // import { AttachmentForm } from './_components/AttachmentForm'
 // import { ChaptersForm } from './_components/ChaptersForm'
 // import Banner from '@/components/Banner'
@@ -112,14 +112,14 @@ const CourseIdPage = async ({
               initialData={course}
               courseId={course.id}
             />
-            {/* <CategoryForm
+            <CategoryForm
               initialData={course}
               courseId={course.id}
               options={categories.map((category) => ({
                 label: category.name,
                 value: category.id
               }))}
-            /> */}
+            />
           </div>
           <div className='space-y-6'>
             <div>
@@ -141,10 +141,10 @@ const CourseIdPage = async ({
                   Sell your course
                 </h2>
               </div>
-              {/* <PriceForm 
+              <PriceForm 
                 initialData={course}
                 courseId={course.id}
-              /> */}
+              />
             </div>
             <div>
               <div className="flex items-center gap-x-2">
