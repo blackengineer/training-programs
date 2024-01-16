@@ -5,7 +5,7 @@ import { CircleDollarSign, File, LayoutDashboard, ListChecks } from 'lucide-reac
 import { redirect } from 'next/navigation'
 import { TitleForm } from './_components/TitleForm'
 import { DescriptionForm } from './_components/DescriptionForm'
-// import { ImageForm } from './_components/ImageForm'
+import { ImageForm } from './_components/ImageForm'
 // import { CategoryForm } from './_components/CategoryForm'
 // import { PriceForm } from './_components/PriceForm'
 // import { AttachmentForm } from './_components/AttachmentForm'
@@ -108,10 +108,10 @@ const CourseIdPage = async ({
               initialData={course}
               courseId={course.id}
             />
-            {/* <ImageForm 
+            <ImageForm 
               initialData={course}
               courseId={course.id}
-            /> */}
+            />
             {/* <CategoryForm
               initialData={course}
               courseId={course.id}
