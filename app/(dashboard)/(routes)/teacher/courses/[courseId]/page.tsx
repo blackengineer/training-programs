@@ -8,7 +8,7 @@ import { DescriptionForm } from './_components/DescriptionForm'
 import { ImageForm } from './_components/ImageForm'
 import { CategoryForm } from './_components/CategoryForm'
 import { PriceForm } from './_components/PriceForm'
-// import { AttachmentForm } from './_components/AttachmentForm'
+import { AttachmentForm } from './_components/AttachmentForm'
 // import { ChaptersForm } from './_components/ChaptersForm'
 // import Banner from '@/components/Banner'
 // import Actions from './_components/Actions'
@@ -153,10 +153,10 @@ const CourseIdPage = async ({
                   Resources & Attachments
                 </h2>
               </div>
-              {/* <AttachmentForm
+              <AttachmentForm
                 initialData={course}
                 courseId={course.id}
-              /> */}
+              />
             </div>
           </div>
         </div>
