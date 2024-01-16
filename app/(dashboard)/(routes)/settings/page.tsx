@@ -15,7 +15,6 @@ import {
   CardHeader,
   CardContent,
 } from '@/components/ui/Card'
-import { Settings } from 'lucide-react'
 import  {
   Form,
   FormField,
@@ -67,7 +66,7 @@ const SettingsPage = () => {
   }
 
   return (
-    <div className=' p-4 flex items-center justify-center'>
+    <div className=' p-4 my-20 flex items-center justify-center'>
       <Card className='w-[600px]'>
         <CardHeader>
           <div className='flex items-center justify-center'>

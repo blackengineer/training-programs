@@ -3,8 +3,8 @@ import { currentUser } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { CircleDollarSign, File, LayoutDashboard, ListChecks } from 'lucide-react'
 import { redirect } from 'next/navigation'
-// import { TitleForm } from './_components/TitleForm'
-// import { DescriptionForm } from './_components/DescriptionForm'
+import { TitleForm } from './_components/TitleForm'
+import { DescriptionForm } from './_components/DescriptionForm'
 // import { ImageForm } from './_components/ImageForm'
 // import { CategoryForm } from './_components/CategoryForm'
 // import { PriceForm } from './_components/PriceForm'
@@ -80,7 +80,7 @@ const CourseIdPage = async ({
         <div className='flex items-center justify-between'>
           <div className='flex flex-col gap-y-2'>
             <h1 className='text-lg font-medium'>
-              Course setup: {params.courseId}
+              Course setup
             </h1>
             <span className="text-sm text-slate-700">
               Complete all fields {completionText}
@@ -100,14 +100,14 @@ const CourseIdPage = async ({
                 Customize your course
               </h2>
             </div>
-            {/* <TitleForm 
+            <TitleForm 
               initialData={course}
               courseId={course.id}
-            /> */}
-            {/* <DescriptionForm 
+            />
+            <DescriptionForm 
               initialData={course}
               courseId={course.id}
-            /> */}
+            />
             {/* <ImageForm 
               initialData={course}
               courseId={course.id}
