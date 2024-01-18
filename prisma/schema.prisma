@@ -3,6 +3,7 @@
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
 }
 
 // prisma/schema.prisma
@@ -47,6 +48,7 @@ model User {
   accounts      Account[]
   isTwoFactorEnabled Boolean @default(false)
   twoFactorConfirmation TwoFactorConfirmation?
+  courses     Course[]
 }
 
 model VerificationToken {
@@ -97,12 +99,17 @@ model Course {
   categoryId String?
   category Category? @relation(fields: [categoryId], references: [id])
 
-  attachments Attachment []
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  chapters Chapter[]
+  attachments Attachment[]
+  purchases Purchase[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([categoryId])
+  // @@fulltext([title])
 }
 
 model Category {
@@ -124,3 +131,123 @@ model Attachment {
   
   @@index([courseId])
 }
+
+model Chapter {
+  id String @id @default(uuid())
+  title String
+  description String? @db.Text
+  caloriesBurned String? @db.Text
+  averageHeartRate String? @db.Text
+  heartRateRange String? @db.Text
+  sessionLength String? @db.Text
+
+  movementOneName String? @db.Text
+  movementOneVideoUrl String? @db.Text
+  movementOneSets String? @db.Text
+  movementOneReps String? @db.Text
+  movementOneTempo String? @db.Text
+  movementOneRest String? @db.Text
+
+  movementTwoName String? @db.Text
+  movementTwoVideoUrl String? @db.Text
+  movementTwoSets String? @db.Text
+  movementTwoReps String? @db.Text
+  movementTwoTempo String? @db.Text
+  movementTwoRest String? @db.Text
+
+  movementThreeName String? @db.Text
+  movementThreeVideoUrl String? @db.Text
+  movementThreeSets String? @db.Text
+  movementThreeReps String? @db.Text
+  movementThreeTempo String? @db.Text
+  movementThreeRest String? @db.Text
+
+  movementFourName String? @db.Text
+  movementFourVideoUrl String? @db.Text
+  movementFourSets String? @db.Text
+  movementFourReps String? @db.Text
+  movementFourTempo String? @db.Text
+  movementFourRest String? @db.Text
+
+  movementFiveName String? @db.Text
+  movementFiveVideoUrl String? @db.Text
+  movementFiveSets String? @db.Text
+  movementFiveReps String? @db.Text
+  movementFiveTempo String? @db.Text
+  movementFiveRest String? @db.Text
+
+  movementSixName String? @db.Text
+  movementSixVideoUrl String? @db.Text
+  movementSixSets String? @db.Text
+  movementSixReps String? @db.Text
+  movementSixTempo String? @db.Text
+  movementSixRest String? @db.Text
+
+  movementSevenName String? @db.Text
+  movementSevenVideoUrl String? @db.Text
+  movementSevenSets String? @db.Text
+  movementSevenReps String? @db.Text
+  movementSevenTempo String? @db.Text
+  movementSevenRest String? @db.Text
+
+  movementEightName String? @db.Text
+  movementEightVideoUrl String? @db.Text
+  movementEightSets String? @db.Text
+  movementEightReps String? @db.Text
+  movementEightTempo String? @db.Text
+  movementEightRest String? @db.Text
+
+  position Int
+  isPublished Boolean @default(false)
+  isFree Boolean @default(false)
+
+  courseId String
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  userProgress UserProgress[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([courseId])
+}
+
+model UserProgress {
+  id String @id @default(uuid())
+  userId String
+  
+  chapterId String
+  chapter Chapter @relation(fields: [chapterId], references: [id], onDelete: Cascade)
+
+  isCompleted Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([chapterId])
+  @@unique([userId, chapterId])
+}
+
+model Purchase {
+  id String @id @default(uuid())
+  userId String
+
+  courseId String
+  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, courseId])
+  @@index([courseId])
+}
+
+model StripeCustomer {
+  id String @id @default(uuid())
+  userId String @unique
+  stripeCustomerId String @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+

@@ -9,7 +9,7 @@ import { ImageForm } from './_components/ImageForm'
 import { CategoryForm } from './_components/CategoryForm'
 import { PriceForm } from './_components/PriceForm'
 import { AttachmentForm } from './_components/AttachmentForm'
-// import { ChaptersForm } from './_components/ChaptersForm'
+import { ChaptersForm } from './_components/ChaptersForm'
 // import Banner from '@/components/Banner'
 // import Actions from './_components/Actions'
 
@@ -30,11 +30,11 @@ const CourseIdPage = async ({
       userId: user.id,
     },
     include: {
-      // chapters: {
-      //   orderBy: {
-      //     position: "asc",
-      //   },
-      // },
+      chapters: {
+        orderBy: {
+          position: "asc",
+        },
+      },
       attachments: {
         orderBy: {
           createdAt: "desc",
@@ -59,7 +59,7 @@ const CourseIdPage = async ({
     course.imageUrl,
     course.price,
     course.categoryId,
-    // course.chapters.some(chapter => chapter.isPublished),
+    course.chapters.some(chapter => chapter.isPublished),
   ]
 
   const totalFields = requiredFields.length
@@ -129,10 +129,10 @@ const CourseIdPage = async ({
                   Course chapters
                 </h2>
               </div>
-              {/* <ChaptersForm 
+              <ChaptersForm 
                 initialData={course}
                 courseId={course.id}
-              /> */}
+              />
             </div>
             <div>
               <div className='flex items-center gap-x-2'>
