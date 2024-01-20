@@ -61,6 +61,7 @@ import { MovementSixVideoForm } from './_components/MovementSixVideoForm'
 import { MovementSevenVideoForm } from './_components/MovementSevenVideoForm'
 import { MovementEightVideoForm } from './_components/MovementEightVideoForm'
 import { ChapterDescriptionForm } from './_components/ChapterDescriptionForm'
+import Banner from '@/components/Banner'
 
 const ChapterIdPage = async ({
   params 
@@ -97,12 +98,12 @@ const ChapterIdPage = async ({
 
   return ( 
     <>
-    {/* {!chapter.isPublished && (
+    {!chapter.isPublished && (
       <Banner 
         variant="warning"
         label="This chapter is not published. It will not be visible in the course."
       />
-    )} */}
+    )}
       <div className="p-6">
         <div className="flex items-center justify-between">
           <div className="w-full">
@@ -191,7 +192,6 @@ const ChapterIdPage = async ({
                 courseId={params.courseId}
                 chapterId={params.chapterId}
               />
-              {/* Chapter Description Form */}
             </div>
           </div>
           <div className='space-y-6'>
