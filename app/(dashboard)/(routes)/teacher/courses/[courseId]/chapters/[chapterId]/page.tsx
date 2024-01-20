@@ -60,6 +60,7 @@ import { MovementFiveVideoForm } from './_components/MovementFiveVideoForm'
 import { MovementSixVideoForm } from './_components/MovementSixVideoForm'
 import { MovementSevenVideoForm } from './_components/MovementSevenVideoForm'
 import { MovementEightVideoForm } from './_components/MovementEightVideoForm'
+import { ChapterDescriptionForm } from './_components/ChapterDescriptionForm'
 
 const ChapterIdPage = async ({
   params 
@@ -144,7 +145,11 @@ const ChapterIdPage = async ({
                 courseId={params.courseId}
                 chapterId={params.chapterId}
               />
-              {/* Chapter Description Form */}
+              <ChapterDescriptionForm
+                initialData={chapter}
+                courseId={params.courseId}
+                chapterId={params.chapterId}
+              />
             </div>
             <div>
               <div className="flex items-center gap-x-2">
