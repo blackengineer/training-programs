@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { IconBadge } from '@/components/IconBadge'
-import { BookOpen } from 'lucide-react'
+import { ActivitySquare } from 'lucide-react'
 import { formatPrice } from '@/lib/format'
 import { CourseProgress } from '@/components/CourseProgress'
 
@@ -44,7 +44,7 @@ export const CourseCard = ({
           </p>
           <div className='my-3 flex items-center gap-x-2 text-sm md:text-sx'>
             <div className='flex items-center gap-x-1 text-slate-500'>
-              <IconBadge size='sm' icon={BookOpen} />
+              <IconBadge size='sm' icon={ActivitySquare} />
                 <span className='text-md md:text-sm'>
                   {chaptersLength} {chaptersLength === 1 ? 'Session' : 'Sessions'}
                 </span>
