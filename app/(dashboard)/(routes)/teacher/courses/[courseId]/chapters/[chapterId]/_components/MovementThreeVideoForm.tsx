@@ -73,7 +73,7 @@ export const MovementThreeVideoForm = ({
           ) : (
             <>
               <Pencil className='h-4 w-4 mr-2' />
-              Edit movement Three video
+              Edit video
             </>
           )}
         </Button>

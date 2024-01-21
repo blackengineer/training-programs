@@ -2,11 +2,6 @@ import { currentUser } from '@/lib/auth'
 import { db } from '@/lib/db'
 import { NextResponse } from 'next/server'
 
-// const { Video } = new Mux(
-//   process.env.MUX_TOKEN_ID!,
-//   process.env.MUX_TOKEN_SECRET!,
-// );
-
 export async function DELETE(
   req: Request,
   { params }: { params: { courseId: string } }
@@ -22,33 +17,12 @@ export async function DELETE(
       where: {
         id: params.courseId,
         userId: user.id,
-      },
-      // include: {
-      //   chapters: {
-      //     include: {
-      //       movementOneMuxData: true,
-      //       movementTwoMuxData: true,
-      //       movementThreeMuxData: true,
-      //       movementFourMuxData: true,
-      //       movementFiveMuxData: true,
-      //       movementSixMuxData: true,
-      //       movementSevenMuxData: true,
-      //       movementEightMuxData: true,
-      //       movementNineMuxData: true,
-      //     }
-      //   }
-      // }
+      }
     })
 
     if (!course) {
       return new NextResponse('Not found', { status: 404 })
     }
-
-    // for (const chapter of course.chapters) {
-    //   if (chapter.movementOneMuxData?.assetId) {
-    //     await Video.Assets.del(chapter.movementOneMuxData.assetId)
-    //   }
-    // }
 
     const deletedCourse = await db.course.delete({
       where: {

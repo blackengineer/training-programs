@@ -73,7 +73,7 @@ export const MovementTwoNameForm = ({
           ) : (
             <>
               <Pencil className='h-4 w-4 mr-2' />
-              Edit Name
+              Edit name
             </>
           )}
         </Button>
