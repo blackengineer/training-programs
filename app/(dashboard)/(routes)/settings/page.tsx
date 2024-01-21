@@ -7,7 +7,7 @@ import { useTransition, useState } from 'react'
 import { settings } from '@/actions/settings'
 import { Button } from '@/components/ui/Button'
 import { useSession } from 'next-auth/react'
-import { Switch } from '@/components/ui/switch'
+import { Switch } from '@/components/ui/Switch'
 
 import { SettingsSchema } from '@/schemas'
 import {
