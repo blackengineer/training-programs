@@ -129,7 +129,7 @@ const ChapterIdPage = async ({
           </div>
         )}
         {isLocked && (
-          <div className='p-4'>
+          <div>
             <MovementOneVideoPlayer
               chapterId={params.chapterId}
               title={chapter.movementOneName!}
