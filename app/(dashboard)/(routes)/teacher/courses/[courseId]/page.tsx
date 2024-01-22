@@ -12,8 +12,6 @@ import { AttachmentForm } from './_components/AttachmentForm'
 import { ChaptersForm } from './_components/ChaptersForm'
 import Banner from '@/components/Banner'
 import Actions from './_components/Actions'
-// import Banner from '@/components/Banner'
-// import Actions from './_components/Actions'
 
 const CourseIdPage = async ({
   params

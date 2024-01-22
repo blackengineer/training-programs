@@ -21,7 +21,7 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/Table'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/Input'
 import Link from 'next/link'
 import { PlusCircle } from 'lucide-react'

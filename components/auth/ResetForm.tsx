@@ -19,7 +19,7 @@ import {
 
 import CardWrapper from '@/components/auth/CardWrapper'
 import { Input } from '@/components/ui/Input'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { FormError } from '@/components/FormError'
 import { FormSuccess } from '@/components/FormSuccess'
 import { reset } from '@/actions/reset'

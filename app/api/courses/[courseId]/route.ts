@@ -17,7 +17,14 @@ export async function DELETE(
       where: {
         id: params.courseId,
         userId: user.id,
-      }
+      },
+      // include: {
+      //   chapters: {
+      //     include: {
+      //       muxData: true,
+      //     }
+      //   }
+      // }
     })
 
     if (!course) {

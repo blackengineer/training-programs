@@ -1,8 +1,7 @@
 'use client'
 
 import { ConfirmModal } from '@/components/modals/ConfirmModal'
-// import { ConfirmModal } from '@/components/modals/ConfirmModal'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import axios from 'axios'
 import { Trash } from 'lucide-react'
 import { useRouter } from 'next/navigation'

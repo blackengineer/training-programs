@@ -1,7 +1,7 @@
 'use client'
 
 import { ConfirmModal } from '@/components/modals/ConfirmModal'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { useConfettiStore } from '@/hooks/use-confetti-store'
 import axios from 'axios'
 import { Trash } from 'lucide-react'
@@ -52,8 +52,8 @@ const Actions = ({
       await axios.delete(`/api/courses/${courseId}`)
 
       toast.success('Course deleted')
-      router.refresh()
       router.push(`/teacher/courses`)
+      router.refresh()
     } catch {
       toast.error('Something went wrong')
     } finally {

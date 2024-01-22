@@ -2,7 +2,7 @@
 
 import * as z from 'zod'
 import axios from 'axios'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { ImageIcon, Pencil, PlusCircle } from 'lucide-react'
 import { useState } from 'react'
 import toast from 'react-hot-toast'
