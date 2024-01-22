@@ -14,6 +14,10 @@ import {
 // import { CourseEnrollButton } from './_components/CourseEnrollButton'
 // import { CourseProgressButton } from './_components/CourseProgressButton'
 import { currentUser } from '@/lib/auth'
+import { CourseEnrollButton } from './_components/CourseEnrollButton'
+import { CourseProgressButton } from './_components/CourseProgressButton'
+import { MovementOneVideoPlayer } from './_components/MovementOneVideoPlayer'
+import { Preview } from '@/components/Preview'
 
 const ChapterIdPage = async ({
   params
@@ -126,13 +130,12 @@ const ChapterIdPage = async ({
         )}
         {isLocked && (
           <div className='p-4'>
-            {/* <MovementOneVideoPlayer
+            <MovementOneVideoPlayer
               chapterId={params.chapterId}
               title={chapter.movementOneName!}
               courseId={params.courseId}
-              nextChapterId={nextChapter?.id}
               isLocked={isLocked}
-            /> */}
+            />
           </div>
         )}  
           {!isLocked && (
@@ -293,7 +296,7 @@ const ChapterIdPage = async ({
         )}
 
         <div>
-          {/* <div className="border rounded-md">
+          <div className="border rounded-md">
             <div className="p-4 flex flex-col md:flex-row items-center justify-between">
               <h2 className='text-xl font-semibold mb-2'>
                 {chapter.title}
@@ -313,6 +316,9 @@ const ChapterIdPage = async ({
                   price={course.price!}
                 />
               )}
+            </div>
+            <div>
+              <Preview value={chapter.description!} />
             </div>
             {!!attachments.length && (
               <>
@@ -334,7 +340,7 @@ const ChapterIdPage = async ({
                 </div>
               </>
             )}
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
