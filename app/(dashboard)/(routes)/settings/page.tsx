@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useTransition, useState } from 'react'
 import { settings } from '@/actions/settings'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { useSession } from 'next-auth/react'
 import { Switch } from '@/components/ui/Switch'
 

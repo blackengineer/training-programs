@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/Form'
 
 import { Input } from '@/components/ui/Input'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { Pencil } from 'lucide-react'
 import { useState } from 'react'
 import toast from 'react-hot-toast'

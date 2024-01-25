@@ -1,7 +1,7 @@
 // import NavbarRoutes from '@/components/NavbarRoutes'
 // import MobileSidebar from './MobileSidebar'
 import Link from 'next/link'
-import { buttonVariants } from '@/components/ui/button'
+import { buttonVariants } from '@/components/ui/Button'
 import { auth } from '@/auth'
 import MobileSidebar from './MobileSidebar'
 import NavbarRoutes from '@/components/NavbarRoutes'

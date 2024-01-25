@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { useConfettiStore } from '@/hooks/use-confetti-store'
 import axios from 'axios'
 import { CheckCircle, XCircle } from 'lucide-react'

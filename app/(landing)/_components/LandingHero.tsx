@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import TypewriterComponent from 'typewriter-effect'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { Progress } from '@/components/ui/Progress'
 import RegisterButton from '@/components/auth/RegisterButton'
 

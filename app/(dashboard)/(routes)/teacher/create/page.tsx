@@ -15,7 +15,7 @@ import {
   FormItem,
 } from '@/components/ui/Form'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import Link from 'next/link'
 import { redirect, useRouter } from 'next/navigation'
@@ -31,7 +31,7 @@ const formSchema = z.object({
 const CreatePage = () => {
   const user = useCurrentUser()
   const router = useRouter()
-  
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {

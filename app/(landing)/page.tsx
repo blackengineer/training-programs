@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import LandingNavbar from './_components/LandingNavbar'
 import LandingHero from './_components/LandingHero'
 

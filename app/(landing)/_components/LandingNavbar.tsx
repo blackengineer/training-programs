@@ -4,7 +4,7 @@ import { Montserrat } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import LoginButton from '@/components/auth/LoginButton'
 
 const font = Montserrat({
