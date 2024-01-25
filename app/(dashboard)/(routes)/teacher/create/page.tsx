@@ -30,21 +30,20 @@ const formSchema = z.object({
 
 const CreatePage = () => {
   const user = useCurrentUser()
-
-  const isAdminUser = user?.role === 'ADMIN'
-
-  if (!isAdminUser) {
-    return redirect('/dashboard')
-  }
-
   const router = useRouter()
-
+  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       title: ""
     },
   })
+
+  const isAdminUser = user?.role === 'ADMIN'
+
+  if (!isAdminUser) {
+    return redirect('/dashboard')
+  }
 
   const { isSubmitting, isValid } = form.formState;
 
