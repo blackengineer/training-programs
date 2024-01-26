@@ -7,7 +7,6 @@ import { useTransition, useState } from 'react'
 import { settings } from '@/actions/settings'
 import { Button } from '@/components/ui/Button'
 import { useSession } from 'next-auth/react'
-import { Switch } from '@/components/ui/Switch'
 
 import { SettingsSchema } from '@/schemas'
 import {
@@ -28,6 +27,7 @@ import { Input } from '@/components/ui/Input'
 import { useCurrentUser } from '@/hooks/use-current-user'
 import { FormSuccess } from '@/components/FormSuccess'
 import { FormError } from '@/components/FormError'
+import { Switch } from '@/components/ui/Switch'
 
 const SettingsPage = () => {
   const user = useCurrentUser()
@@ -169,7 +169,7 @@ const SettingsPage = () => {
                             </FormDescription>
                           </div>
                           <FormControl>
-                            <Switch 
+                            <Switch
                               disabled={isPending}
                               checked={field.value}
                               onCheckedChange={field.onChange}
