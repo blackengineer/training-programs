@@ -8,7 +8,7 @@ import RegisterButton from '@/components/auth/RegisterButton'
 
 const LandingHero = () => {
   return (
-    <div className='font-bold py-36 text-center space-y-5'>
+    <div className='p-4 font-bold py-36 text-center space-y-5'>
       <div className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold mb-10'>
         <h1>
           how to train for
