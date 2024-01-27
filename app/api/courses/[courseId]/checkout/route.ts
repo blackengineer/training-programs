@@ -11,7 +11,7 @@ export async function POST(
   try {
     const user = await currentUser()
 
-    if (!user || !user?.id || !user.email) {
+    if (!user || !user.id || !user.email) {
       return new NextResponse('Unauthorized', { status: 401 })
     }
 
