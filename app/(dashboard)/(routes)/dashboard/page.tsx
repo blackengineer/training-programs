@@ -6,6 +6,7 @@ import { CoursesList } from '@/components/CoursesList'
 
 import { InfoCard } from './_components/InfoCard'
 import { currentUser } from '@/lib/auth'
+import Footer from '@/components/Footer'
 
 export default async function Dashboard() {
   const user = await currentUser()

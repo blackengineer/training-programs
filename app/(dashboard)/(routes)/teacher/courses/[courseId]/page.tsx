@@ -162,9 +162,6 @@ const CourseIdPage = async ({
           </div>
         </div>
       </div>
-      <div>
-        <Footer />
-      </div>
     </>
   )
 }

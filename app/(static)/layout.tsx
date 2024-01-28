@@ -17,9 +17,6 @@ const StaticLayout = ({
       <main className='pt-[82px] h-full'>
         {children}
       </main>
-      <div>
-        <Footer />
-      </div>
     </div>
   )
 }
