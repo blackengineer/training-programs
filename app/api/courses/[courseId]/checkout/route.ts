@@ -11,7 +11,7 @@ export async function POST(
   try {
     const user = await currentUser()
 
-    if (!user || !user.id || !user.email) {
+    if (!user || !user.id || !user.email?.[0]) {
       return new NextResponse('Unauthorized', { status: 401 })
     }
 
@@ -64,7 +64,7 @@ export async function POST(
 
     if (!stripeCustomer) {
       const customer = await stripe.customers.create({
-        email: user.email,
+        email: user.email[0],
       })
 
       stripeCustomer = await db.stripeCustomer.create({
