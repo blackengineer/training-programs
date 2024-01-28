@@ -7,8 +7,18 @@ const Footer = () => {
         &copy; 2024 Muscle Development Platforms
       </div>
       <div>
-        <Link href={'/about'}>
+        <Link 
+          className='mr-6'
+          href={'/about'}>
           About
+        </Link>
+        <Link 
+          className='mr-6'
+          href={'/terms'}>
+          Terms of Service
+        </Link>
+        <Link href={'/privacy'}>
+          Privacy Policy
         </Link>
       </div>
     </div> 
