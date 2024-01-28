@@ -5,7 +5,6 @@ import { auth } from '@/auth'
 import './globals.css'
 import ToastProvider from '@/components/providers/ToasterProvider'
 import { ConfettiProvider } from '@/components/providers/ConfettiProvider'
-import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,9 +23,6 @@ export default async function RootLayout({
   return (
     <SessionProvider session={session}>
       <html lang="en" suppressHydrationWarning>
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
-        </Head>
         <body className={inter.className}>
           <ConfettiProvider />
           <ToastProvider />
