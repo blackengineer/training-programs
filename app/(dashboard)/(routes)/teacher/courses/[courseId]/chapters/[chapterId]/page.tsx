@@ -62,6 +62,7 @@ import { MovementSevenVideoForm } from './_components/MovementSevenVideoForm'
 import { MovementEightVideoForm } from './_components/MovementEightVideoForm'
 import { ChapterDescriptionForm } from './_components/ChapterDescriptionForm'
 import Banner from '@/components/Banner'
+import Footer from '@/components/Footer'
 
 const ChapterIdPage = async ({
   params 
@@ -532,6 +533,9 @@ const ChapterIdPage = async ({
             />
           </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
    );

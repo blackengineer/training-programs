@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='flex items-center justify-center gap-x-10 text-xs pt-40 pb-10 text-muted-foreground'>
+    <div className='border-t flex justify-between p-6 text-xs text-muted-foreground'>
       <div>
         &copy; 2024 Muscle Development Platforms
       </div>
@@ -11,8 +11,7 @@ const Footer = () => {
           About
         </Link>
       </div>
-      
-    </div>
+    </div> 
   )
 }
 

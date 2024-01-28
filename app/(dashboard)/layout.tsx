@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import Navbar from './_components/Navbar'
 import Sidebar from './_components/Sidebar'
 
@@ -19,6 +20,9 @@ const DashboardLayout = ({
       <main className='md:pl-56 pt-[82px] h-full'>
         {children}
       </main>
+      <div className='md:pl-56'>
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/Button'
 import LandingNavbar from './_components/LandingNavbar'
 import LandingHero from './_components/LandingHero'
 import Footer from '@/components/Footer'

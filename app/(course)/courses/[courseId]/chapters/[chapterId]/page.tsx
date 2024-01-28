@@ -18,6 +18,7 @@ import { CourseEnrollButton } from './_components/CourseEnrollButton'
 import { CourseProgressButton } from './_components/CourseProgressButton'
 import { MovementOneVideoPlayer } from './_components/MovementOneVideoPlayer'
 import { Preview } from '@/components/Preview'
+import Footer from '@/components/Footer'
 
 const ChapterIdPage = async ({
   params
@@ -420,6 +421,7 @@ const ChapterIdPage = async ({
           </div>
         </div>
       )}
+      <Footer />
     </div>
   )
 }
