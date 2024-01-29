@@ -11,10 +11,10 @@ const Privacy = () => {
       </h2>
       <p className='pl-6 pr-6 text-sm mt-4'>
         Muscle Development Platforms acting as
-        https://www.howtotrainfor.com (“We” or “Us” or “Our”) is committed to
+        https://www.howtotrainfor.com (&quot;We&quot; or &quot;Us&quot; or &quot;Our&quot;) is committed to
         ensure Your privacy while providing the most unique services
-        (“Services”). In this policy we refer to You as “user”, “Customer”, “You”,
-        “Your”. If You want to become a Customer of the Service, You need to
+        (&quot;Services&quot;). In this policy we refer to You as &quot;user&quot;, &quot;Customer&quot;, &quot;You&quot;,
+        &quot;Your&quot;. If You want to become a Customer of the Service, You need to
         register and open Your personal account through Our Website. At the
         time of registration, We ask You to provide Us with a certain amount of
         personal information. Submission of such personal information is
@@ -29,7 +29,7 @@ const Privacy = () => {
         If You live in a country that is a member of the European Economic
         Area, the way your data is processed and the current Privacy Policy
         shall be governed by the General Data Protection Regulation or
-        Regulation [UE] 2016/679("GDPR").
+        Regulation [UE] 2016/679(&quot;GDPR&quot;).
       </p>
       <p className='pl-6 pr-6 text-sm mt-4'>
         If you live in a country outside the European Economic Area, collection
@@ -237,8 +237,8 @@ const Privacy = () => {
           transfer your data to the area or Service provision and process it
           there. By visiting or using our Services, you consent to storage of your
           data on servers located in the country of Our residence. Specifically,
-          personal data collected in the United Kingdom (“UK”), Switzerland,
-          and the European Economic Area (“EEA”) may be transferred and
+          personal data collected in the United Kingdom (&quot;UK&quot;), Switzerland,
+          and the European Economic Area (&quot;EEA&quot;) may be transferred and
           stored outside those areas.
         </p>
       <h2 className='pl-6 pr-6 text-base font-semibold mt-6'>
@@ -298,11 +298,11 @@ const Privacy = () => {
           infringement. We will promptly investigate notices of alleged
           infringement and will take appropriate actions required under the
           Digital Millennium Copyright Act, Title 17, United States Code, Section
-          512(c)(2) ("DMCA") and other applicable intellectual property laws.
+          512(c)(2) (&quot;DMCA&quot;) and other applicable intellectual property laws.
         </p>
         <p className='pl-6 pr-6 text-sm mt-4'>
           Pursuant to the DMCA, notifications of claimed copyright infringement
-          should be sent to a Service Provider's Designated Agent. Notification
+          should be sent to a Service Provider&apos;s Designated Agent. Notification
           must be submitted to the following Designated Agent for these sites:
         </p>
         <p className='pl-6 pr-6 text-sm mt-4'><span className='font-semibold'>Name:</span> Jimmy Lindsey</p>
