@@ -6,20 +6,25 @@ const Footer = () => {
       <div>
         &copy; 2024 Muscle Development Platforms
       </div>
-      <div>
-        <Link 
-          className='mr-6'
-          href={'/about'}>
-          About
-        </Link>
-        <Link 
-          className='mr-6'
-          href={'/terms'}>
-          Terms of Service
-        </Link>
-        <Link href={'/privacy'}>
-          Privacy Policy
-        </Link>
+      <div className='grid md:grid-cols-3'>
+        <div>
+          <Link
+            href={'/about'}>
+            About
+          </Link>
+        </div>
+        <div>
+          <Link 
+            className='mr-6'
+            href={'/terms'}>
+            Terms of Service
+          </Link>
+        </div>
+        <div>
+          <Link href={'/privacy'}>
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </div> 
   )
