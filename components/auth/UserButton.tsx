@@ -52,18 +52,28 @@ export const UserButton = () => {
 
         <DropdownMenuItem asChild>
           <Link
+            href='/dashboard'
+            className='cursor-pointer'
+          >
+            Dashboard
+          </Link>
+        </DropdownMenuItem>
+
+        <DropdownMenuItem asChild>
+          <Link
             href='/search'
             className='cursor-pointer'
           >
             Courses
           </Link>
         </DropdownMenuItem>
+
         <DropdownMenuItem asChild>
           <Link
-            href='/dashboard'
+            href='/docs'
             className='cursor-pointer'
           >
-            Dashboard
+            Docs
           </Link>
         </DropdownMenuItem>
 

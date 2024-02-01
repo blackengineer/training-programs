@@ -35,7 +35,7 @@ const NavbarRoutes = () => {
             </Button>
           </Link> 
         ): isAdminUser ? (
-          <Link href={'teacher/courses'}>
+          <Link href={'/teacher/courses'}>
             <Button variant={'ghost'} className='mt-0.5'>
               Teacher mode
             </Button>
