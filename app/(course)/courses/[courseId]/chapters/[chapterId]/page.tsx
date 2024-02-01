@@ -421,7 +421,6 @@ const ChapterIdPage = async ({
           </div>
         </div>
       )}
-      <Footer />
     </div>
   )
 }
