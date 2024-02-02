@@ -68,14 +68,14 @@ export const UserButton = () => {
           </Link>
         </DropdownMenuItem>
 
-        <DropdownMenuItem asChild>
+        {/* <DropdownMenuItem asChild>
           <Link
             href='/docs'
             className='cursor-pointer'
           >
             Docs
           </Link>
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
 
         <DropdownMenuSeparator />
         <DropdownMenuItem asChild>

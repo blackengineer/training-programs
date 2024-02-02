@@ -38,13 +38,36 @@ const About = () => {
                   General Information
                 </div>
                 <div className='text-base font-bold mt-4'>
-                  About me
+                  About HTTF
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className='text-sm text-slate-600'>
-                Jimmy is an experienced Athletic Performance Coach and Exercise Physiologist. Jimmy studied Business Administration and Computer Science at East Carolina University. He began his career in Athletics working alongside Athletic Trainers and Physical Therapists while studying Athletic Training at the University of North Carolina at Charlotte. Jimmy then went to Columbia University where he earned his Masters Degree in Applied Exercise Physiology. During this time, he was a student teacher of physical education at various private schools in New York City and served as a coordinator for the Jr. Knicks basketball program.
+                I created HTTF to educate, inform, and inspire you as you navigate your journey to personal transformation.
+              </div>
+            </CardContent>
+            <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
+              <CardTitle>
+                <div className='text-base font-bold'>
+                  About me
+                </div>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className='space-y-3'>
+                <p className='text-sm text-slate-600'>
+                  I am a follower of Jesus, husband, father, athlete, and coach. Growing up, I played soccer, baseball, football, basketball, and video games. Mostly video games. I excelled at basketball and was selected to the Charlotte Pro-Am team as a senior in high school.
+                </p>
+                <p className='text-sm text-slate-600'>
+                  I studied business administration and computer science at East Carolina University. During my time there, I won an intramural basketball championship, founded a club basketball team, and joined professional business fraternities. During my brief tenure as an accountant, I swiftly realized that my gifts, talents, and abilities were better aligned with the application and teaching of athletic performance.
+                </p>
+                <p className='text-sm text-slate-600'>
+                  I began my career in athletics working alongside athletic trainers, physical therapists, and strength and conditioning coaches while also studying athletic training at the University of North Carolina at Charlotte. I then went to Columbia University where I received my Masters Degree in Applied Exercise Physiology. 
+                </p>
+                <p className='text-sm text-slate-600'>
+                  I am also a self-taught software engineer. I currently live in Los Angeles with my wife and two daughters.
+                </p>
               </div>
               <div className='mt-6'>
                 <div>
