@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer'
 import StaticNavbar from './_components/StaticNavbar'
 
 interface StaticLayoutProps {
