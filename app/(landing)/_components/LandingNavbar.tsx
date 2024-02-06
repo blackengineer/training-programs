@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 import { Button } from '@/components/ui/Button'
 import LoginButton from '@/components/auth/LoginButton'
+import Logo from '@/components/Logo'
 
 const font = Montserrat({
   weight: '600',
@@ -16,12 +17,8 @@ const LandingNavbar = () => {
   return (
     <nav className='p-4 bg-transparent flex items-center justify-between'>
       <Link href='/' className='flex items-center'>
-        <div className='absolute h-40 w-40'>
-          <Image 
-            fill
-            alt='logo'
-            src='logo.svg'
-          />
+        <div>
+          <Logo />
         </div>
       </Link>
       <div className='flex items-center gap-x-2'>
