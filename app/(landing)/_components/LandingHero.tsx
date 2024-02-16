@@ -22,6 +22,7 @@ const LandingHero = () => {
                 '10k',
                 'baseball',
                 'half marathon',
+                'lean mass',
                 'football',
                 'marathon',
                 'HYROX',
