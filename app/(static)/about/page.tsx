@@ -63,7 +63,7 @@ const About = () => {
                   I studied business administration and computer science at East Carolina University. During my time there, I won an intramural basketball championship, founded a club basketball team, and joined professional business fraternities. During my brief tenure as an accountant, I swiftly realized that my gifts, talents, and abilities were better aligned with the application and teaching of athletic performance.
                 </p>
                 <p className='text-sm text-slate-600'>
-                  I began my career in athletics working alongside athletic trainers, physical therapists, and strength and conditioning coaches while also studying athletic training at the University of North Carolina at Charlotte. I then went to Columbia University where I received my Masters Degree in Applied Exercise Physiology. 
+                  I began my career in athletics working alongside athletic trainers, physical therapists, and strength and conditioning coaches while also studying athletic training at the University of North Carolina at Charlotte. I then went to Columbia University where I received my Masters Degree in Applied Physiology. 
                 </p>
                 <p className='text-sm text-slate-600'>
                   I am also a self-taught software engineer. I currently live in Los Angeles with my wife and two daughters.
@@ -96,7 +96,7 @@ const About = () => {
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                       <time className="mb-1 text-sm font-normal leading-none text-slate-400 dark:text-slate-500">2014</time>
                       <h3 className="text-base font-semibold text-gray-900 dark:text-white">Columbia University</h3>
-                      <p>MA Applied Exercise Physiology</p>
+                      <p>MA Applied Physiology</p>
                     </li>
                   </ol>
                 </div>
@@ -114,11 +114,6 @@ const About = () => {
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                       <h3 className="text-base font-semibold text-gray-900 dark:text-white">National Strength and Conditioning Association</h3>
                       <p>Certified Performance and Sport Scientist</p>
-                    </li>  
-                    <li className="mb-6 ms-4">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                      <h3 className="text-base font-semibold text-gray-900 dark:text-white">American College of Sports Medicine</h3>
-                      <p>Certified Clinical Exercise Physiologist</p>
                     </li>           
                     <li className="mb-6 ms-4">
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>

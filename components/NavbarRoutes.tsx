@@ -14,6 +14,7 @@ const NavbarRoutes = () => {
 
   const isTeacherPage = pathname?.startsWith('/teacher')
   const isCoursePage = pathname?.includes('/courses')
+  const isDocsPage = pathname?.includes('/docs')
   const isSearchPage = pathname === "/search"
 
   const isAdminUser = user?.role === 'ADMIN'
@@ -27,7 +28,7 @@ const NavbarRoutes = () => {
       )}
     
       <div className='flex gap-x-2 ml-auto'>
-        {isTeacherPage || isCoursePage ? (
+        {isTeacherPage || isCoursePage || isDocsPage ? (
           <Link href={'/dashboard'}>
             <Button variant={'ghost'} className='mt-0.5'>
               <LogOut className='h-4 w-4 mr-2'/>
