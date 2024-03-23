@@ -11,7 +11,8 @@ export const publicRoutes = [
   '/api/webhook',
   '/about',
   '/privacy',
-  '/terms'
+  '/terms',
+  '/faq',
 ]
 
 /**
