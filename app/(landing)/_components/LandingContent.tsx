@@ -1,8 +1,5 @@
 'use client'
 
-import { Avatar, AvatarImage } from '@/components/ui/Avatar'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
-
 const testimonials = [
   {
     name: 'Dona',
