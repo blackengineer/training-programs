@@ -8,9 +8,9 @@ const products = [
     imageAlt: 'Choose your course.',
   },
   {
-    description: '2. Complete your lessons',
+    description: '2. Complete your sessions',
     imageSrc: '/train.png',
-    imageAlt: 'Complete your lessons.',
+    imageAlt: 'Complete your sessions.',
   },
   {
     description: '3. Compete with confidence',
