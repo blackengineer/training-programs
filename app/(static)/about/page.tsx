@@ -112,12 +112,7 @@ const About = () => {
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                       <h3 className="text-base font-semibold text-gray-900 dark:text-white">Collegiate Strength and Conditioning Coaches Association</h3>
                       <p>Strength and Conditioning Coach Certified</p>
-                    </li>
-                    <li className="mb-6 ms-4">
-                      <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                      <h3 className="text-base font-semibold text-gray-900 dark:text-white">National Strength and Conditioning Association</h3>
-                      <p>Certified Performance and Sport Scientist</p>
-                    </li>           
+                    </li>          
                     <li className="mb-6 ms-4">
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                       <h3 className="text-base font-semibold text-gray-900 dark:text-white">National Strength and Conditioning Association</h3>
