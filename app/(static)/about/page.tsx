@@ -2,33 +2,36 @@ import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
 import { Briefcase, MapPin } from 'lucide-react'
 
+const founder = [
+  {
+    name: 'Jimmy Lindsey, MA, SCCC, CSCS',
+    avatar: '/headshot.jpg',
+    title: 'Athletic Performance Coach | Exercise Physiologist',
+    location: 'Los Angeles, CA'
+  },
+]
+
 const About = () => {
   return (
     <div className='mt-20'>
-      <h1 className='pl-6 pr-6 text-2xl font-bold'>
+      <h1 className='pl-6 pr-6 my-8 text-2xl font-bold'>
         About
       </h1>
-      <div className='pl-6 pr-6 mt-10 grid lg:grid-cols-3 text-sm gap-4'>
+      <div className='pl-6 pr-6 grid lg:grid-cols-3 text-sm gap-4'>
         <div className='lg:col-span-1 md:col-span-3 sm:col-span-3'>
-          <Card>
-            <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-              <CardTitle>
-                <div className='text-lg font-bold'>
-                  Jimmy Lindsey, MA
-                </div>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className='flex items-center gap-x-1 text-slate-500 mt-3'>
-                <Briefcase className='h-5 w-5'/>
-                Athletic Performance Coach | Exercise Physiologist
-              </div>
-              <div className='flex items-center gap-x-1 text-slate-500 mt-3'>
-                <MapPin className='h-5 w-5'/>
-                Los Angeles, CA
-              </div>
-            </CardContent>
-          </Card>
+          {founder.map((item) => (
+            <div key={item.name} className="sm:inline-block sm:w-full">
+              <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                <figcaption className="mt-6 flex items-center gap-x-4">
+                  <img className="h-16 w-16 rounded-full bg-gray-50" src={item.avatar} alt="" />
+                  <div>
+                    <h2 className="text-lg font-semibold text-gray-900">{item.name}</h2>
+                    <div>{item.title}</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          ))}
         </div>
         <div className='lg:col-span-2 md:col-span-3 sm:col-span-3'>
           <Card>
@@ -63,10 +66,10 @@ const About = () => {
                   I studied business administration and computer science at East Carolina University. During my time there, I won an intramural basketball championship, founded a club basketball team, and joined professional business fraternities. During my brief tenure as an accountant, I swiftly realized that my gifts, talents, and abilities were better aligned with the application and teaching of athletic performance.
                 </p>
                 <p className='text-sm text-slate-600'>
-                  I began my career in athletics working alongside athletic trainers, physical therapists, and strength and conditioning coaches while also studying athletic training at the University of North Carolina at Charlotte. I then went to Columbia University where I received my Masters Degree in Applied Physiology. 
+                  I began my career in athletics working alongside athletic trainers, physical therapists, and strength and conditioning coaches while also studying athletic training at the University of North Carolina at Charlotte. I then went to Columbia University where I received my Masters Degree in Applied Physiology. For the last fifteen years I have worked in Physical Education, Physical Therapy, Strength and Conditioning, and Tech.
                 </p>
                 <p className='text-sm text-slate-600'>
-                  I am also a self-taught software engineer. I currently live in Los Angeles with my wife and two daughters.
+                  I currently live in Los Angeles with my wife and two daughters.
                 </p>
               </div>
               <div className='mt-6'>
