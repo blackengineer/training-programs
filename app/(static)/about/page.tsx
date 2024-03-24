@@ -6,7 +6,7 @@ const founder = [
   {
     name: 'Jimmy Lindsey, MA, SCCC, CSCS',
     avatar: '/headshot.jpg',
-    title: 'Athletic Performance Coach | Exercise Physiologist',
+    title: 'Founder',
     location: 'Los Angeles, CA'
   },
 ]
