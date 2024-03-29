@@ -4,7 +4,7 @@ import { Briefcase, MapPin } from 'lucide-react'
 
 const founder = [
   {
-    name: 'Jimmy Lindsey, MA, SCCC, CSCS',
+    name: 'Jimmy Lindsey, MA, CSCS, SCCC',
     avatar: '/headshot.jpg',
     title: 'Founder',
     location: 'Los Angeles, CA'
