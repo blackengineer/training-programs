@@ -14,7 +14,7 @@ const products = [
   },
   {
     description: '3. Compete with confidence',
-    imageSrc: '/home_run_6_22-98.jpg',
+    imageSrc: '/confidence.jpg',
     imageAlt: 'Compete with confidence',
   },
 ]
