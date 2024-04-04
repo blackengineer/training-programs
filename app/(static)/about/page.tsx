@@ -87,7 +87,7 @@ const About = () => {
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                       <time className="mb-1 text-sm font-normal leading-none text-slate-400 dark:text-slate-500">2007</time>
                       <h3 className="text-base font-semibold text-gray-900 dark:text-white">East Carolina University</h3>
-                      <p className='text-sm'>BSBA Management Accounting, Minor Computer Science</p>
+                      <p className='text-sm'>BSBA Management Accounting</p>
                     </li>
                     <li className="mb-6 ms-4">
                       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
