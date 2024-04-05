@@ -33,7 +33,7 @@ export default function Example() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-8">
             {products.map((product) => (
               <div key={product.description} className="group">
-                <div className="mt-4 mb-4 flex items-center justify-center text-base font-semibold text-white">
+                <div className="mt-4 mb-8 flex items-center justify-center text-base font-semibold text-white">
                   <h2 className='text-xl'>{product.description}</h2>
                 </div>
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg sm:aspect-h-3 sm:aspect-w-2">
