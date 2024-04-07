@@ -1,12 +1,21 @@
+'use client'
+
 import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card'
-import { Briefcase, MapPin } from 'lucide-react'
+import { Fragment,} from 'react'
+import { Menu, Transition } from '@headlessui/react'
+import { EllipsisHorizontalIcon } from '@heroicons/react/20/solid'
+import { cn } from '@/lib/utils'
 
 const founder = [
   {
     name: 'Jimmy Lindsey, MA, CSCS, SCCC',
     avatar: '/headshot.jpg',
     title: 'Founder',
+    role1: 'Exercise Physiologist',
+    role2: 'Sport Scientist',
+    role3: 'Athletic Performance Coach',
+    role4: 'Software Engineer',
     location: 'Los Angeles, CA'
   },
 ]
@@ -19,19 +28,86 @@ const About = () => {
       </h1>
       <div className='pl-6 pr-6 grid lg:grid-cols-3 text-sm gap-4'>
         <div className='lg:col-span-1 md:col-span-3 sm:col-span-3'>
-          {founder.map((item) => (
-            <div key={item.name} className="sm:inline-block sm:w-full">
-              <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
-                <figcaption className="mt-6 flex items-center gap-x-4">
-                  <img className="h-16 w-16 rounded-full bg-gray-50" src={item.avatar} alt="" />
-                  <div>
-                    <h2 className="text-lg font-semibold text-gray-900">{item.name}</h2>
-                    <div>{item.title}</div>
+        {founder.map((item) => (
+              <div key={item.name} className="overflow-hidden rounded-xl border border-gray-200">
+                <div className="flex items-center gap-x-4 border-b border-gray-900/5 bg-gray-50 p-6">
+                  <img
+                    src={item.avatar}
+                    alt={item.name}
+                    className="h-12 w-12 flex-none rounded-full bg-white object-cover ring-1 ring-gray-900/10"
+                  />
+                  <div className="text-sm font-medium leading-6 text-gray-900">{item.name}</div>
+                  <Menu as="div" className="relative ml-auto">
+                    <Menu.Button className="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500">
+                      <span className="sr-only">Open options</span>
+                      <EllipsisHorizontalIcon className="h-5 w-5" aria-hidden="true" />
+                    </Menu.Button>
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-100"
+                      enterFrom="transform opacity-0 scale-95"
+                      enterTo="transform opacity-100 scale-100"
+                      leave="transition ease-in duration-75"
+                      leaveFrom="transform opacity-100 scale-100"
+                      leaveTo="transform opacity-0 scale-95"
+                    >
+                      <Menu.Items className="absolute right-0 z-10 mt-0.5 w-32 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a 
+                              target='_blank'
+                              href="https://www.instagram.com/themusclephysio/"
+                              className={cn(
+                                active ? 'bg-gray-50' : '',
+                                'block px-3 py-1 text-sm leading-6 text-gray-900'
+                              )}
+                            >
+                              Instagram<span className="sr-only">, {item.name}</span>
+                            </a>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <a 
+                              target='_blank'
+                              href="https://www.tiktok.com/@themusclephysio"
+                              className={cn(
+                                active ? 'bg-gray-50' : '',
+                                'block px-3 py-1 text-sm leading-6 text-gray-900'
+                              )}
+                            >
+                              TicTok<span className="sr-only">, {item.name}</span>
+                            </a>
+                          )}
+                        </Menu.Item>
+                      </Menu.Items>
+                    </Transition>
+                  </Menu>
+                </div>
+                <dl className="-my-3 divide-y divide-gray-100 px-6 py-4 text-sm leading-6">
+                  <div className="flex justify-between gap-x-4 py-3">
+                    <dd className="text-gray-700">
+                      {item.role1}
+                    </dd>
                   </div>
-                </figcaption>
-              </figure>
-            </div>
-          ))}
+                  <div className="flex justify-between gap-x-4 py-3">
+                    <dd className="text-gray-700">
+                      {item.role2}
+                    </dd>
+                  </div>
+                  <div className="flex justify-between gap-x-4 py-3">
+                    <dd className="text-gray-700">
+                      {item.role3}
+                    </dd>
+                  </div>
+                  <div className="flex justify-between gap-x-4 py-3">
+                    <dd className="text-gray-700">
+                      {item.role4}
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            ))}
         </div>
         <div className='lg:col-span-2 md:col-span-3 sm:col-span-3'>
           <Card>
@@ -66,7 +142,7 @@ const About = () => {
                   I studied business administration and computer science at East Carolina University. During my time there, I won an intramural basketball championship, founded a club basketball team, and joined professional business fraternities. During my brief tenure as an accountant, I swiftly realized that my gifts, talents, and abilities were better aligned with the application and teaching of athletic performance.
                 </p>
                 <p className='text-sm text-slate-600'>
-                  I began my career in athletics working alongside athletic trainers, physical therapists, and strength and conditioning coaches while also studying athletic training at the University of North Carolina at Charlotte. I then went to Columbia University where I received my Masters Degree in Applied Physiology. For the last fifteen years I have worked in Physical Education, Physical Therapy, Strength and Conditioning, and Tech.
+                  I began my career in athletics working alongside athletic trainers, physical therapists, and strength and conditioning coaches while also studying athletic training at the University of North Carolina at Charlotte. I then went to Columbia University where I received my Masters Degree in Applied Physiology. For the last fifteen years I have worked in Physical Education, Physical Therapy, Strength and Conditioning, Technology, and Workforce Wellness.
                 </p>
                 <p className='text-sm text-slate-600'>
                   I currently live in Los Angeles with my wife and two daughters.
