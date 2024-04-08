@@ -34,7 +34,7 @@ const About = () => {
                   <img
                     src={item.avatar}
                     alt={item.name}
-                    className="h-12 w-12 flex-none rounded-full bg-white object-cover ring-1 ring-gray-900/10"
+                    className="h-24 w-24 flex-none rounded-full bg-white object-cover ring-1 ring-gray-900/10"
                   />
                   <div className="text-sm font-medium leading-6 text-gray-900">{item.name}</div>
                   <Menu as="div" className="relative ml-auto">
