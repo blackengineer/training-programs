@@ -10,14 +10,16 @@ const testimonials = [
     course: 'Marathon',
     avatar: 'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     title: 'Marathoner',
-    description: 'I run three marathons every year!',
+    description: '"Reducing my body fat and building a stronger core and lower body has helped me to stay healthy and achieve a new PR!"',
+    stat1Name: 'Body Composition',
     stat1: '',
     previousStat1: '',
-    stat1ChangeType: 'increase',
+    stat1ChangeType: 'decrease',
     stat1Change: '',
+    stat2Name: 'Marathon Time',
     stat2: '',
     previousStat2: '',
-    stat2ChangeType: 'decrease',
+    stat2ChangeType: 'increase',
     stat2Change: '',
   },
   {
@@ -26,11 +28,13 @@ const testimonials = [
     course: 'Lean Mass',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     title: 'Surfer',
-    description: 'I am hitting waves that I could not hit before How to train for!',
+    description: '"Becuase of the strength and power that I have developed in my upper and lower body, I am now able to catch waves that I was unable to catch previously."',
+    stat1Name: 'Trap Bar Deadlift 3RM',
     stat1: '',
     previousStat1: '',
     stat1ChangeType: 'increase',
     stat1Change: '',
+    stat2Name: 'Broad Jump',
     stat2: '',
     previousStat2: '',
     stat2ChangeType: 'increase',
@@ -42,11 +46,13 @@ const testimonials = [
     course: 'Swimming',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     title: 'Swimmer',
-    description: 'I am so much faster in the water after training with HTTF!',
+    description: 'Adding strength training to my routine helped to strengthen the muscles around my knee, which eliminated my knee pain, making me feel stronger and faster in the water.',
+    stat1Name: 'Lean Muscle Mass',
     stat1: '',
     previousStat1: '',
     stat1ChangeType: 'increase',
     stat1Change: '',
+    stat2Name: 'Percent Body Fat',
     stat2: '',
     previousStat2: '',
     stat2ChangeType: 'decrease',
@@ -89,6 +95,7 @@ const LandingContent = () => {
                 </div>
                 
                 <div className="flex justify-between gap-x-4 py-3">
+                  <dt className="font-normal text-gray-900">{item.stat1Name}</dt>
                   <dd className="text-gray-700">
                     <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
                       {item.stat1}
@@ -120,6 +127,7 @@ const LandingContent = () => {
                 </div>
 
                 <div className="flex justify-between gap-x-4 py-3">
+                  <dt className="font-normal text-gray-900">{item.stat2Name}</dt>
                   <dd className="text-gray-700">
                     <div className="flex items-baseline text-2xl font-semibold text-indigo-600">
                       {item.stat2}
