@@ -4,12 +4,12 @@ import { Button } from '@/components/ui/Button'
 const products = [
   {
     description: '1. Choose your course',
-    imageSrc: '/choose.svg',
+    imageSrc: '/choose.png',
     imageAlt: 'Choose your course.',
   },
   {
     description: '2. Complete your sessions',
-    imageSrc: '/train.svg',
+    imageSrc: '/train.png',
     imageAlt: 'Complete your sessions.',
   },
   {
