@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils'
 const founder = [
   {
     name: 'Jimmy Lindsey, MA, CSCS, SCCC',
-    avatar: '/headshot.png',
+    avatar: '/headshot.jpg',
     title: 'Founder',
     role1: 'Exercise Physiologist',
     role2: 'Sport Scientist',
